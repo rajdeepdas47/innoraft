@@ -1,0 +1,378 @@
+/* ########## CUSTOM CSS ######### */
+
+/* MARKETPLACE PAGE LIST */
+
+.feature-carousel{
+	padding-bottom: 60px;
+	padding-top: 15px;
+	position: relative;
+}
+.feature-carousel .left{
+	width:35%;
+	border:1px solid #D7D7D7;
+	float: left;
+	display: table;
+}
+.feature-carousel .left div{
+	height: 289px;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+.feature-carousel .left img{
+	max-width: 100%;
+	width: auto;
+}
+.feature-carousel .right{
+	width:65%;
+	overflow: hidden;
+	position: relative;
+	float:left;
+	padding: 30px;
+	height: 292px;
+	border:1px solid #D7D7D7;
+	border-left:0;
+}
+.feature-carousel .right h3{
+	font-size: 30px;
+	font-weight: bold;
+}
+.feature-carousel .right a{
+	width:100%;
+	padding:15px;
+	padding-left: 45px;
+	background-color: #7E297E;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color:#ffffff;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 17px;
+}
+.feature-carousel .right a::before{
+    background-color: #ed2728;
+    bottom: -1px;
+    content: "";
+    font-size: 80px;
+    height: 55px;
+    line-height: 50px;
+    padding: 0 14px;
+    position: absolute;
+    right: -11px;
+    text-align: center;
+    -webkit-transform: skewX(-18deg);
+    -moz-transform: skewX(-18deg);
+    transform: skewX(-18deg);
+    width: 135px;
+}
+.feature-carousel .right a::after{
+	bottom: -1px;
+    color: #ffffff;
+    content: "→";
+    font-size: 95px;
+    height: 54px;
+    line-height: 50px;
+    padding: 0 14px;
+    position: absolute;
+    right: -11px;
+    text-align: center;
+    -webkit-transform: rotateY(36deg);
+    -moz-transform: rotateY(36deg);
+    transform: rotateY(36deg);
+    width: 135px;
+}
+.feature-carousel .carousel-nav{
+	position: absolute;
+	bottom:20px;
+	right:10px;
+}
+.feature-carousel .carousel-nav span{
+	cursor: pointer;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #c1c1c1;
+	margin:0 4px;
+	display: inline-block;
+	text-indent: -9999px;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.feature-carousel .carousel-nav span:hover{
+	background-color:#d7d7d7;
+}
+.feature-carousel .carousel-nav span.active{
+	background-color: #000000;
+	border: 1px solid #000000;
+}
+.block-item-list .list-filter{
+	padding:0 0 20px;
+}
+.block-item-list .list-filter .filter-group{
+	padding:0 15px;
+}
+.block-item-list .list-filter .category{
+	float: left;
+}
+.block-item-list .list-filter .limit, .block-item-list .list-filter .sort{
+	float: right;
+}
+.block-item-list .list-filter label{
+	color:#777777;
+	font-weight: normal;
+	padding-right: 10px; 
+}
+.block-item-list .list-filter .limit label{
+	padding: 0;
+}
+.block-item-list .block-item{
+	border:1px solid #D7D7D7;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}
+.block-item-list .block-item .field-image{
+	background-color: #FBFBFB;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.block-item-list .block-item .field-text h3{
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.block-item-list .block-item .field-text h3, .block-item-list .block-item .field-text p{
+	padding:0 15px;
+}
+.block-item-list .block-item .field-text p{
+	font-size: 13px;
+}
+.block-item-list .block-item .field-text a{
+	display: block;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 15px 0 7px;
+	margin: 0 15px;
+	border-top:1px solid #222222;
+	color: #222222;
+}
+.typography .pagination-wrap{
+	text-align:center;
+	padding:15px;
+}
+.typography .pagination-wrap ul.pagination{
+	display: inline-block;
+}
+.typography ul.pagination li{
+	padding-left: 0;
+}
+.typography ul.pagination li::before{
+	content:"";
+	border:none;
+}
+.typography ul.pagination li a{
+	margin-bottom: 15px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	color:#555;
+}
+.typography ul.pagination li a:hover{
+	font-weight: normal;
+}
+.typography ul.pagination li.current a{
+	background-color:#1665A7;
+	color:#ffffff;
+}
+
+/* ##### RESPONSIVE ##### */
+
+@media screen and (max-width: 1199px){
+
+	.extra{
+		margin:0 !important;
+	}
+	.feature-carousel .left{
+		height:320px;
+		display: table;
+	}
+	.feature-carousel .left > div{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.feature-carousel .right{
+		height:320px;
+	}
+}
+@media screen and (max-width: 991px){
+	.feature-carousel .left{
+		float: none;
+		display: block;
+		height: auto;
+		border-bottom:none;
+		width: auto;
+		text-align: center;
+	}
+	.feature-carousel .left img{
+		max-width:300px;
+	}
+	.feature-carousel .left div{
+		display: block;
+		height: auto;
+		padding: 15px;
+	}
+	.feature-carousel .right{
+		float:none;
+		height: auto;
+		width: auto;
+		padding-top: 15px;
+		padding-bottom:70px;
+		border:1px solid #D7D7D7;
+		border-top:none;
+	}
+}
+@media screen and (max-width: 767px){
+	.feature-carousel .right{
+		padding:30px 5% 70px;
+	}
+}
+@media screen and (max-width: 500px){
+	.block-item-list .list-filter .filter-group{
+		float: none !important;
+		padding: 5px 15px;
+	}
+	.block-item-list .list-filter .filter-group label{
+		min-width: 60px;
+	}
+	.block-item-list .list-filter .filter-group.limit select{
+		margin-right:7px; 
+	}
+	.block-item-list .list-filter .filter-group.sort{
+		position: absolute;
+		top:0;
+		right:0;
+	}
+	.feature-carousel .right a{
+		padding:15px;
+	}
+	.feature-carousel .left img{
+		max-width:240px;
+	}
+	.typography ul.pagination li a{
+		padding:5px;
+		font-size: 12px;
+	}
+}
+
+/* MARKETPLACE DETAIL PAGE */
+
+.content.heading .text-image.field-text{
+	float: left;
+	width:75%;
+}
+.content.heading .text-image.field-image{
+	float: right;
+	width: 25%;
+	text-align: right;
+}
+.content.heading .text-image.field-image img{
+	max-width: 100%;
+	height:auto;
+}
+
+.table-info{
+	background-color: #FBFBFB;
+	padding:15px 0;
+}
+.table-info ul{
+	padding:0;
+}
+.table-info ul li{
+	float: left;
+	width:16.66%;
+	list-style: none;
+}
+.table-info ul li span{
+	display:block;
+	padding-top: 5px 10px;
+	font-size: 18px;
+}
+.table-info ul li span.label-head{
+	font-weight: bold;
+}
+
+.typography .main h3, .typography .main h4{
+	font-weight: bold;
+}
+.typography .main a{
+	color:#000000;
+}
+.right-sidebar .content{
+	margin-bottom: 20px;
+}
+.right-sidebar .content .content-wrap{
+	border:1px solid #D7D7D7;
+}
+.right-sidebar .content .text-image.field-image img{
+	max-width: 100%;
+	height:auto;
+}
+.right-sidebar .content .text-image.field-text{
+	padding: 30px 15px 10px;
+	text-align: center;
+}
+.right-sidebar .content .text-image.field-text h3{
+	font-weight: bold;
+}
+.right-sidebar .content .text-image.field-text a{
+	color:#000000;
+}
+
+/* #### RESPONSIVE #### */
+
+@media screen and (max-width: 991px){
+	.table-info{
+		padding-bottom: 0;
+	}
+	.table-info ul li{
+		width:33.33%;
+		margin-bottom: 15px;
+	}
+	.right-sidebar{
+		margin: 0 -15px;
+		padding-top: 40px;
+	}
+	.right-sidebar .content{
+		float:left;
+		width:33.33%;
+		padding:0 15px;
+	}
+}
+@media screen and (max-width: 767px){
+	.content.heading .text-image.field-text, .content.heading .text-image.field-image{
+		float: none;
+		width:auto;
+		text-align: left;
+	}
+}
+@media screen and (max-width: 690px){
+	.right-sidebar .content{
+		float:left;
+		width:50%;
+		padding:0 15px;
+	}
+}
+@media screen and (max-width: 590px){
+	.table-info ul li{
+		width:50%;
+	}	
+}
+@media screen and (max-width: 512px){
+	.right-sidebar .content{
+		max-width: 300px;
+		width:auto;
+		float: none;
+		margin:0 auto 15px;
+	}
+}
